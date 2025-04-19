@@ -57,5 +57,37 @@
                 <h3>ex) <code>&lt;br&gt;</code>태그를 적용함</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa inventore atque aperiam expedita ab.<br> Accusamus totam nobis omnis ad facilis cum,<br> tempora, facere saepe quos blanditiis odio rem quibusdam dolorem? <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Dolore temporibus ab ipsum aperiam quaerat accusantium nihil incidunt, at unde perspiciatis. Vitae, <br>facere facilis vero placeat officiis atque deserunt molestiae laborum.</p>
             </div>
             <!-- <br> 태그 종료 -->
+            
+                <!-- <wbr> 태그 시작 -->
+    <div>
+        <h2><code>&lt;wbr&gt;</code>태그</h2>
+        <p>웹페이지의 특정 요소의 줄 바꿈 규칙을 무시하고 브라우저가 줄을 바꿀수 있는 위치를 지정하는방법</p>
+        <p>영어의경우 웹페이지를 늘리고 줄일때 공백을주면 단어 하나하나로 떨어지지만 한,중,일어는 글자하나하나로떨어짐
+            그럴때 <code>&lt;style&gt;</code>에 .korean {<mark class="mark1">word-break</mark>: <mark class="mark2">keep-all</mark>;}를 사용하면 한,중,일어는 글자하나하나로 떨어지지않고 영어와같이 공백을 준곳이 떨어짐 </p>
+            <ul>
+                <li><mark class="mark1">word-break</mark>: 텍스트가 자신의 콘텐츠 박스 밖으로 오버플로 할 때 줄을 바꿀지 지정</li>
+                <li><mark class="mark2">keep-all</mark> : 단어 단위로 줄바꿈 해주는 속성. 한중일(CJK) 텍스트에서는 줄을 바꿀 때 단어를 끊지 않음. 비 CJK 텍스트에서는 normal과 동일</li>
+            </ul>
+
+        <h3>ex) <code>&lt;wbr&gt;</code>태그를 사용하지않음</h3>
+                <p>
+                    This is a
+                    very very very very very very very very very very very very very very very very very very longword that will breakatspecificplaces whenthe browser window is resized.
+                </p>
+                <p>
+                    이것은 브라우저창크기가조정될때특정위치에서깨지는
+                    매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우 매우 매우 매우 매우 매우 긴 단어 입니다.
+                    후후후후후후후후
+                </p>
+        <h3>ex) <code>&lt;wbr&gt;</code>태그를 사용함</h3>
+            </p>veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr />longwordthatwillbreakatspecific<wbr />placeswhenthebrowserwindowisresized.
+        </p>
+        <p class="korean">
+            이것은 브라우저창크기가조정될때특정위치에서깨지는
+            매우매우매우<wbr>매우매우매우매우매우매우매우매우<wbr />매우매우매우<wbr>매우매우매우매우매우<wbr>매우매우매우매우매우<wbr>긴단어입니다.
+            후후후후<wbr>후후후후
+        </p>
+    </div>
+    <!-- <wbr> 태그 끝 -->
 </body>
 </html>
